@@ -1,0 +1,556 @@
+/*Changes all fonts to sans serif and the color white*/
+body, a {
+  font-family: sans-serif;
+  color: black;
+}
+body {
+  background-color: #E6E1CE;
+  margin: 0px auto;
+}
+/*Elements that I do not want to float will not be floated.*/
+.clear {
+  clear: both;
+}
+.center_text {
+  text-align: center;
+}
+/*Creates the headers on each section on the "My Resume" page*/
+h4 {
+    display: block;
+    color: #F5FAFE;
+    font-weight: bold;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #863C53;
+}
+/* Styles the title of each page that's under the navigation bar.
+The title is centered, enlarged to 30px, and put into uppercase*/
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/*The error container and hidden error code is based off of lab 11*/
+
+/*Styles the error message*/
+.errorContainer {
+  font-size: 14px;
+  color: red;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  padding: 5px 10px;
+  margin-top: 5px;
+  display: inline-block;
+}
+/*Hides the error message*/
+.hiddenError {
+  display: none;
+}
+/*Laptop Styling*/
+@media screen and (min-width: 1000px) {
+  /*Changes the background to purple, sets the width, and centers the body*/
+  body {
+    background-color: #E6E1CE;
+    width: 1000px;
+    margin: 0px auto;
+  }
+  /*Floats my name to the left on the top of each page.*/
+  .name {
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+  }
+  /*Floats my contact info to the right on the top of each page.*/
+  .contact {
+    float: right;
+    width: 400px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  /* Removes the bullets from the navvigation list on each page
+  and changes the navigation bar color to black.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navul {
+      list-style-type: none;
+      background-color: #863C53;
+      overflow: hidden;
+  }
+  /* Floats the navigation bar on each page to the left side of the screen.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navli {
+      float: left;
+      width: 175px;
+  }
+  /* Changes the look of the navigation bar items to have no underline,
+  to have white font, to be centered, to be uppercase, and have padding.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navli a {
+      display: block;
+      color: #F5FAFE;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  /* Changes color when you hover over navigation bar
+  Learned how to do this from W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  li a:hover {
+      background-color: #838996;
+  }
+  /* Changes the width of the picture of myself on my "Home" page*/
+  .aparna {
+    width: 500px;
+  }
+  /* Floats the figure of myself on the "Home" page to the left. Adds margin around it on all sides and a little
+  extra on the right so that the introduction paragraph doesn't sit right next to the picture. Changes
+  font size of figure caption and centers it under picture.*/
+  .my_pic {
+    float:left;
+    width: 500px;
+    margin: 10px 10px;
+    margin-right: 35px;
+    font-size: 15px;
+    text-align: center;
+  }
+  /*Floats the introduction of myself on the "Home" page to the right, adjusts the font size, creates a background
+  to see the text more clearly, adds padding, border, and margin.*/
+  .intro {
+    float: right;
+    width: auto;
+    font-size: 18px;
+    background-color: rgba(207, 161, 112, 0.7);
+    padding: 5px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: hidden;
+  }
+
+  /*Puts my job position and date on the left side of the page on the "My Resume" page*/
+  .position, .date {
+    float: left;
+    width: 300px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  /*Puts my job description on the right side of the page on the "My Resume" page*/
+  .description {
+    float: right;
+    width: 500px;
+    text-align: right;
+    margin-right: 20px;
+  }
+  /*Puts my job position in bold on the "My Resume" page*/
+  .position {
+    font-weight: bold;
+  }
+  /*Puts my job dates in italics on the "My Resume" page*/
+  .date {
+    font-style: italic;
+  }
+  /*Aligns the 1st and 2nd pictures and captions to the left and sets the width to 330px,
+  adds padding, and centers the caption under the image */
+  .work1, .work2 {
+    float: left;
+    width: 300px;
+    padding-right: 50px;
+  }
+  /*Aligns the 3rd picture and caption to the left and sets the width to 330px
+  and centers the caption under the image */
+  .work3 {
+    float: right;
+    width: 300px;
+  }
+  .workpic {
+    display: block;
+    margin: auto;
+  }
+  /*Highlights the  picture of my work when you hover over them on the "My Work" page.
+  I learned how to do this through W3Schools:
+  https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  .workpic:hover {
+    opacity: 0.5;
+  }
+  /*Gives padding to the form */
+  form {
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+    background-color: rgba(207, 161, 112, 0.7);
+    border-radius: 10px;
+    border-style: hidden;
+  }
+  /*Styles the boxes where the user will input information. I specified a background color,
+  added padding, margin, and a border. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  input, textarea {
+    padding: 10px 2px;
+    background-color: #F5FAFE;
+    margin: 15px 0px;
+    border-width: thin;
+    border-color: black;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+  }
+  /*Makes the textarea larger because there will probably be longer chunks of text than
+  the previous responses. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  textarea {
+    height: 100px;
+  }
+  /*Makes the labels bold so that they are easier to read. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  label {
+    font-weight: bold;
+  }
+  /*Styles the submit button on the bottom so that the text is larger and so that it matches the
+  color scheme. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  button {
+    background-color: #863C53;
+    color: #F5FAFE;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-color: inherit;
+  }
+
+}
+/*Tablet Styling*/
+@media screen and (min-width: 701px) and (max-width: 999px) {
+  body {
+      width: 700px;
+  }
+  /*Floats my name to the left on the top of each page.*/
+  .name {
+    float: left;
+    width: 350px;
+    margin-left: 20px;
+  }
+  /*Floats my contact info to the right on the top of each page.*/
+  .contact {
+    float: right;
+    width: 250px;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  /* Removes the bullets from the navvigation list on each page
+  and changes the navigation bar color to black.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navul {
+      list-style-type: none;
+      background-color: #863C53;
+      overflow: hidden;
+  }
+  /* Floats the navigation bar on each page to the left side of the screen.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navli {
+      float: left;
+      width: 150px;
+  }
+  /* Changes the look of the navigation bar items to have no underline,
+  to have white font, to be centered, to be uppercase, and have padding.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navli a {
+      display: block;
+      color: #F5FAFE;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  /* Changes the width of the picture of myself on my "Home" page*/
+  .aparna {
+    width: 500px;
+    display: block;
+    margin: auto;
+  }
+  /* Floats the figure of myself on the "Home" page to the left. Adds margin around it on all sides and a little
+  extra on the right so that the introduction paragraph doesn't sit right next to the picture. Changes
+  font size of figure caption and centers it under picture.*/
+  .my_pic {
+    width: 600px;
+    display: block;
+    margin: 10px 10px;
+    font-size: 15px;
+    text-align: center;
+  }
+  /*Floats the introduction of myself on the "Home" page to the right, adjusts the font size, creates a background
+  to see the text more clearly, adds padding, border, and margin.*/
+  .intro {
+    display: block;
+    width: auto;
+    font-size: 18px;
+    background-color: rgba(207, 161, 112, 0.7);
+    padding: 5px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border-style: hidden;
+  }
+
+  /*Puts my job position and date on the left side of the page on the "My Resume" page*/
+  .position, .date {
+    float: left;
+    width: 200px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  /*Puts my job description on the right side of the page on the "My Resume" page*/
+  .description {
+    float: right;
+    width: 400px;
+    text-align: right;
+    margin-right: 20px;
+  }
+  /*Puts my job position in bold on the "My Resume" page*/
+  .position {
+    font-weight: bold;
+  }
+  /*Puts my job dates in italics on the "My Resume" page*/
+  .date {
+    font-style: italic;
+  }
+  /*Aligns the 1st and 2nd pictures and captions to the left and sets the width to 330px,
+  adds padding, and centers the caption under the image */
+  .work1, .work2, .work3 {
+    display: block;
+    margin: 0px auto;
+    width: 400px;
+    padding: 20px 20px;
+  }
+  .workpic {
+    display: block;
+    margin: 0px auto;
+    width: auto;
+  }
+  /*Highlights the  picture of my work when you hover over them on the "My Work" page.
+  I learned how to do this through W3Schools:
+  https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  .workpic:hover {
+    opacity: 0.5;
+  }
+  /*Gives padding to the form */
+  form {
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    background-color: rgba(207, 161, 112, 0.7);
+    border-radius: 10px;
+    border-style: hidden;
+  }
+  /*Styles the boxes where the user will input information. I specified a background color,
+  added padding, margin, and a border. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  input, textarea {
+    padding: 10px 2px;
+    background-color: #F5FAFE;
+    margin: 15px 0px;
+    border-width: medium;
+    border-color: black;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 15px;
+    height: 30px;
+  }
+  /*Makes the textarea larger because there will probably be longer chunks of text than
+  the previous responses. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  textarea {
+    height: 100px;
+  }
+  /*Makes the labels bold so that they are easier to read. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  label {
+    font-weight: bold;
+  }
+  /*Styles the submit button on the bottom so that the text is larger and so that it matches the
+  color scheme. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  button {
+    background-color: #863C53;
+    color: #F5FAFE;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-color: inherit;
+  }
+}
+/*Styling for phones*/
+@media screen and (max-width: 700px) {
+  /*Floats my name to the left on the top of each page.*/
+  .name {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  /*Floats my contact info to the right on the top of each page.*/
+  .contact {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  /* Removes the bullets from the navvigation list on each page
+  and changes the navigation bar color to black.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navul {
+      list-style-type: none;
+      background-color: #863C53;
+
+  }
+  /* Floats the navigation bar on each page to the left side of the screen.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navli {
+      display: block;
+      margin: auto;
+      width: 200px;
+  }
+  /* Changes the look of the navigation bar items to have no underline,
+  to have white font, to be centered, to be uppercase, and have padding.
+  Inspiration from the horizontal navigation bar example on W3Schools:
+  https://www.w3schools.com/css/css_navbar.asp*/
+  .navli a {
+      display: block;
+      margin-right: 25px;
+      color: #F5FAFE;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  /* Changes the width of the picture of myself on my "Home" page*/
+  .aparna {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  /* Floats the figure of myself on the "Home" page to the left. Adds margin around it on all sides and a little
+  extra on the right so that the introduction paragraph doesn't sit right next to the picture. Changes
+  font size of figure caption and centers it under picture.*/
+  .my_pic {
+    width: 75%;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+  }
+  /*Floats the introduction of myself on the "Home" page to the right, adjusts the font size, creates a background
+  to see the text more clearly, adds padding, border, and margin.*/
+  .intro {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    background-color: rgba(207, 161, 112, 0.7);
+    padding: 5px 20px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    border-style: hidden;
+  }
+
+  /*Puts my job position and date and description on the left side of the page on the "My Resume" page*/
+  .position, .date, .description {
+
+    text-align: left;
+    margin-left: 20px;
+  }
+  /*Puts my job position in bold on the "My Resume" page*/
+  .position {
+    font-weight: bold;
+  }
+  /*Puts my job dates in italics on the "My Resume" page*/
+  .date {
+    font-style: italic;
+  }
+  /*Aligns the 1st and 2nd pictures and captions to the left and sets the width to 330px,
+  adds padding, and centers the caption under the image */
+  .work1, .work2, .work3 {
+    display: block;
+    margin: 0px auto;
+    width: 75%;
+    padding: 20px 20px;
+  }
+  .workpic {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+  }
+  /*Highlights the  picture of my work when you hover over them on the "My Work" page.
+  I learned how to do this through W3Schools:
+  https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+  .workpic:hover {
+    opacity: 0.5;
+  }
+  /*Gives padding to the form */
+  form {
+    padding: 5px 10px;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(207, 161, 112, 0.7);
+    border-radius: 10px;
+    border-style: hidden;
+  }
+  /*Styles the boxes where the user will input information. I specified a background color,
+  added padding, margin, and a border. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  input, textarea {
+    font-family: sans-serif;
+    padding: 10px 2px;
+    background-color: #F5FAFE;
+    margin: 15px 0px;
+    border-width: medium;
+    border-color: black;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 15px;
+    height: 20px;
+  }
+  /*Makes the textarea larger because there will probably be longer chunks of text than
+  the previous responses. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  textarea {
+    height: 50px;
+  }
+  /*Makes the labels bold so that they are easier to read. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  label {
+    font-weight: bold;
+  }
+  /*Styles the submit button on the bottom so that the text is larger and so that it matches the
+  color scheme. I learned how to do this from W3Schools:
+  https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+  button {
+    background-color: #863C53;
+    color: #F5FAFE;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-color: inherit;
+  }
+
+}
