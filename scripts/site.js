@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   var TEST_CILENT_SIDE = true;
   if (TEST_CILENT_SIDE) {
-    //I looked through the lab 11 to learn how to do this
     $("#mainForm").on("submit", function() {
       var formValid = true;
 
