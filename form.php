@@ -1,5 +1,4 @@
 <?php
-  //This code is based on lab 12
   $submit = $_REQUEST["submit"];
   // Stores the name of the class for hidden error messages
   $HIDDEN_ERROR_CLASS = "hiddenError";
@@ -80,12 +79,7 @@
   <article>
     <div class="centerPane">
       <h2>Contact Form</h2>
-      <!--This is the contact form for my website. The "label" tags specify the titles for each section of the contact form
-      and the "input" tags create the space for the user to input information. I added a placeholder in these spaces.
-      I also used a "textarea" tag for the longer message that will be sent to me so that the user can have more room to
-      write a longer response and the user can adjust the size of the "textarea" if they need to write a lot.
-      I learned how to do this from Prof Harms' examples that he posted on CMS and W3Schools:
-      https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+      <!--This is the contact form for my website-->
       <form action="form.php" method="post" id="mainForm" novalidate>
         <div class="contact_form">
           <label for="name">Name:<span class="errorContainer <?php if ($nameValid) { echo($HIDDEN_ERROR_CLASS);} ?>"
