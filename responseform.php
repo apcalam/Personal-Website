@@ -1,5 +1,4 @@
 <?php
-//My code is based on lab 12
 session_start();
 $name = $_SESSION['name'];
 unset($_SESSION['name']);
